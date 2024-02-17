@@ -1,0 +1,13 @@
+#N canvas 156 156 1600 817 12;
+#X obj 624 320 inlet;
+#X obj 624 369 + \$1;
+#X obj 624 393 outlet;
+#X obj 686 394 outlet;
+#X obj 686 370 - \$1;
+#X text 753 367 \$1 is the first argument passed to the abstraction there are no further arguments reauired to use this abstraction;
+#X text 692 313 <-- \$1 is added and substracted to "inlet";
+#X text 624 273 PLUS MINUS ABSTRACTION;
+#X connect 0 0 1 0;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 4 0 3 0;

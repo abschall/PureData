@@ -1,0 +1,10 @@
+#N canvas 208 208 1600 817 12;
+#X obj 129 98 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 129 256 output~;
+#X obj 129 215 *~;
+#X obj 148 179 osc~ 440;
+#X obj 129 140 adsr 1 200 1000 50 100;
+#X connect 0 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 0;
