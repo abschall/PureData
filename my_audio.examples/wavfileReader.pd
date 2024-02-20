@@ -1,0 +1,10 @@
+#N canvas 1114 134 533 484 10;
+#X obj 538 349 readsf~ 2;
+#X msg 599 314 start;
+#X msg 734 309 stop;
+#X msg 503 274 open sound/voice.wav;
+#X msg 384 229 open sound/DavidCastelloLopezVoix.wav;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
