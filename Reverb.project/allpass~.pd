@@ -1,4 +1,4 @@
-#N canvas 412 23 798 808 12;
+#N canvas 984 95 798 808 12;
 #X obj 243 339 +~;
 #X obj 443 528 +~;
 #X obj 460 300 *~;
@@ -12,7 +12,10 @@
 #X obj 323 453 expr (1 - ($f1*$f1));
 #X obj 465 229 float \$3;
 #X obj 465 190 loadbang;
-#X floatatom 611 364 5 0 0 0 - - - 0;
+#X obj 533 191 inlet;
+#X text 580 190 Gain;
+#X text 533 390 \$1 delay name \$2 delay time \$3 feedback Gain;
+#X text 300 151 Allpass filter;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 2 0 1 1;
@@ -27,5 +30,5 @@
 #X connect 11 0 7 1;
 #X connect 11 0 8 0;
 #X connect 11 0 10 0;
-#X connect 11 0 13 0;
 #X connect 12 0 11 0;
+#X connect 13 0 11 0;

@@ -5,6 +5,7 @@ Created on Fri Mar  1 23:17:21 2024
 @author: fv-19
 """
 import numpy as np
+import matplotlib.pyplot as plt
 
 def combGainCalc(T, tau):
     # tau delay time
@@ -39,3 +40,31 @@ for t in tau :
     g = combGainCalc(rt60,t)
     print ('s', t, '   g:', g, '\n')
     
+
+def conversion(x, minVal, maxVal):
+    diff = (maxVal-minVal)
+    print(diff)
+    return (minVal + x * diff)
+
+def dBtoLin( x):
+    return 10**(2*(x-1))
+
+def quartic2(value):
+    value = value - 0.5
+    value2 = value * value * 4.0
+    value4 = value2 * value2 * 3.0
+    value = value4
+    return value 
+
+
+def quartic(value):
+
+    return value*value*value*value
+
+x = np.linspace(0,1,100)
+
+y =  dBtoLin(x)
+yquartic = quartic(x)
+plt.plot(x,y)
+plt.plot(x,yquartic)
+plt.show()
