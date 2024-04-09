@@ -1,0 +1,13 @@
+#N canvas 1206 315 450 300 12;
+#X obj 100 100 cnv 19 100 50 empty empty Impulse 8 25 0 14 #00ff04 #404040 0;
+#X obj 167 113 bng 25 250 50 0 empty empty empty 0 -10 0 17 #fcfcfc #000000 #000000;
+#X obj 167 202 vline~;
+#X msg 167 176 1 0 \, 0 0 1;
+#X text 91 70 SIMPLE SHORT IMPULSE RESPONSE;
+#X obj 167 231 outlet~;
+#X obj 241 231 outlet;
+#X connect 1 0 3 0;
+#X connect 1 0 6 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X coords 0 -1 1 1 100 50 1 100 100;

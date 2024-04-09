@@ -68,3 +68,19 @@ yquartic = quartic(x)
 plt.plot(x,y)
 plt.plot(x,yquartic)
 plt.show()
+
+# =============================================================================
+# Moorer reverb comb and APF structures
+# =============================================================================
+
+def oscAPFgainCalc(r,theta,m):
+    # r is the decay rate
+    # theta is the frequency
+    # m is the number of samples between each pulse in the impulse response
+    return r**2, -2*(r/1+r**2)*np.cos(theta/m)
+
+def oscComb_gainCalc(r,theta,m):
+    # r is the decay rate
+    # theta is the frequency
+    # m is the number of samples between each pulse in the impulse response
+    return 2*r*np.cos(theta/m), -r**2
