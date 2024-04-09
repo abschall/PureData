@@ -1,4 +1,4 @@
-#N canvas 300 197 1920 997 12;
+#N canvas -140 215 1920 997 12;
 #X obj 47 16 inlet~;
 #X obj 45 300 outlet~;
 #X obj 47 54 +~;
@@ -9,6 +9,10 @@
 #X obj 47 169 delread~ \$1-oscComb1 \$2;
 #X obj 46 207 delwrite~ \$1-oscComb2 \$2;
 #X obj 46 245 delread~ \$1-oscComb2 \$2;
+#X text 371 188 \$1 subpatch comb filter name;
+#X text 371 206 \$2 delay time;
+#X text 371 224 \$3 gain g1;
+#X text 371 242 \$4 gain g2;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 6 0;
