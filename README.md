@@ -4,17 +4,14 @@
 > 
 >  
 
-
-**/3.audio.examples** example patches from  **"The Theory and Technique of Electronic
-Music"**, by Miller Puckette
-
 **/MultiTapDelay.project** contains two Analog Delay patches. 
 
 - *AnalogDelay.pd* simple Analog Delay
 - *AnalogMultiTapDelay.pd* builds upon the simple Analog Delay and is a 4 tap delay, with Delay Ratio control, between the 4 taps. 
 - *DelayTestingPlatform.pd* simple interface to test the patches
 
-**/my_audio.examples** my implementation patches of the examples from the book.
+**/my_audio.examples** my implementation patches of the examples from **"The Theory and Technique of Electronic
+Music"**, by Miller Puckette
 
 **/pd_docs** Pure Data documentation and examples 
 
