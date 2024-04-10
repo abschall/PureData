@@ -12,7 +12,7 @@
 #X obj 314 218 * -1;
 #X obj 314 242 + 1;
 #X obj 100 234 *~;
-#X obj 314 123 f \$2;
+#X obj 314 104 f \$2;
 #X obj 303 43 loadbang;
 #X floatatom 314 290 5 0 0 0 - - - 0;
 #X text 365 194 g1;
@@ -43,7 +43,6 @@
 #X connect 14 0 24 0;
 #X connect 14 0 26 0;
 #X connect 15 0 12 1;
-#X connect 15 0 22 0;
 #X connect 18 0 23 0;
 #X connect 19 0 24 0;
 #X connect 19 0 27 0;
@@ -52,5 +51,6 @@
 #X connect 24 0 8 0;
 #X connect 25 0 15 0;
 #X connect 26 0 25 1;
+#X connect 26 0 22 0;
 #X connect 27 0 6 0;
 #X connect 27 0 7 0;

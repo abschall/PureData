@@ -61,7 +61,7 @@
 #X obj 625 655 *~;
 #X floatatom 522 662 6 0 0 0 - - - 0;
 #X obj 632 540 alternateAPF~ APF6 89.12 6.281;
-#X obj 100 101 cnv 19 300 200 empty empty Dattorro\ Reverb 20 12 0 12 #e0e0e0 #404040 0;
+#X obj 100 101 cnv 19 300 200 empty empty Dattorro\ Reverb 10 12 0 12 #77ff64 #ffffff 0;
 #X obj 115 225 hsl 100 19 0 100 0 0 empty empty decay\ difussion\ 1 -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 257 139 hsl 100 19 0 20000 0 0 empty empty Damping -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 114 266 hsl 100 19 0 1 0 0 empty empty Decay -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
