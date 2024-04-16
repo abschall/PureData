@@ -1,4 +1,4 @@
-#N canvas 953 0 958 988 12;
+#N canvas 655 60 958 949 12;
 #X obj 192 439 expr 1 - $f1;
 #X obj 159 461 *~;
 #X obj 191 491 *~;
@@ -17,7 +17,7 @@
 #X obj 632 346 alternateAPF_modulated~ modAPF2 30.46 0.536 1, f 34;
 #X obj 345 430 delread~ dline1 149.4;
 #X obj 344 400 delwrite~ dline1 200;
-#X obj 344 743 +~;
+#X obj 346 674 +~;
 #X obj 345 584 delwrite~ dline2 200;
 #X obj 346 614 delread~ dline2 124.8;
 #X obj 632 400 delwrite~ dline3 200;
