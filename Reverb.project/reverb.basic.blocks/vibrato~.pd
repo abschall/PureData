@@ -1,8 +1,8 @@
-#N canvas 349 79 662 540 12;
+#N canvas 349 79 465 370 12;
 #X obj 41 251 +~ 1;
 #X obj 165 228 * 2;
-#X obj 165 252 +;
-#X floatatom 165 277 5 0 0 0 - - - 0;
+#X obj 200 259 +;
+#X floatatom 200 284 5 0 0 0 - - - 0;
 #X floatatom 150 136 5 0 0 0 - - - 0;
 #X obj 30 103 delwrite~ 0$-vibrato 100;
 #X obj 41 275 vd~ 0$-vibrato;
@@ -28,5 +28,6 @@
 #X connect 9 0 15 0;
 #X connect 14 0 1 0;
 #X connect 14 0 16 1;
+#X connect 14 0 2 1;
 #X connect 15 0 16 0;
 #X connect 16 0 0 0;
